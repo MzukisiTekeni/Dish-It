@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="maroon_primary">#550000</color>
+    <color name="maroon_secondary">#CC550000</color>
+    <color name="background_pink">#EAD8D8</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_dark">#3A2020</color>
+    <color name="text_gray">#9C8A87</color>
+    <color name="star_yellow">#F5A623</color>
+    <color name="badge_red">#B71010</color>
+    <color name="divider_light">#EEDEDC</color>
 </resources>
