@@ -1,4 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Needed once you wire up Spoonacular (or any network call) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Dish-It"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DishIt">
+
+        <!-- Auth flow -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationActivity" android:exported="false" />
+
+        <!-- Main app -->
+        <activity android:name=".FindRecipesActivity" android:exported="false" />
+        <activity android:name=".RecipeDetailsActivity" android:exported="false" />
+        <activity android:name=".RecipeBookActivity" android:exported="false" />
+        <activity android:name=".MealPlannerActivity" android:exported="false" />
+        <activity android:name=".ShoppingListActivity" android:exported="false" />
+        <activity android:name=".HealthScoreActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" android:exported="false" />
+
+    </application>
+
+</manifest>
+=======
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -24,3 +62,4 @@
     </application>
 
 </manifest>
+>>>>>>> main

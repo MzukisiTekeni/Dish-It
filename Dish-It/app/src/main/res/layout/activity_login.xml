@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_pink"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Login"
+            android:textColor="@color/maroon_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Dish-It logo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dish_it_logo" />
+
+        <!-- Username -->
+        <LinearLayout style="@style/AuthField">
+            <ImageView style="@style/AuthFieldIcon" android:src="@drawable/ic_person" />
+            <EditText
+                android:id="@+id/et_username"
+                style="@style/AuthFieldInput"
+                android:hint="Username..."
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- Password -->
+        <LinearLayout style="@style/AuthField">
+            <ImageView style="@style/AuthFieldIcon" android:src="@drawable/ic_person_lock" />
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/AuthFieldInput"
+                android:hint="Password..."
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_filled"
+            app:backgroundTint="@color/maroon_primary"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/card_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Forgot Password?"
+            android:textColor="@color/maroon_primary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:gravity="center"
+            android:text="OR"
+            android:textColor="@color/maroon_primary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_outline"
+            app:backgroundTint="@color/card_white"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/maroon_primary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

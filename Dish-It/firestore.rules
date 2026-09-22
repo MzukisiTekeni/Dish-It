@@ -1,0 +1,81 @@
+rules_version = '2';
+
+// Schema reference (kept in sync with app/src/main/java/.../data/FirebaseRepository.kt
+// and docs/FIRESTORE_SCHEMA.md):
+//
+//   usernames/{username}              -> { uid: string, email: string }
+//   users/{uid}                       -> { fullName, username, email, defaultServings, createdAt }
+//   users/{uid}/savedRecipes/{id}     -> Recipe   { title, imageUrl, timeMinutes, servings, rating, tag, id }
+//   users/{uid}/shoppingItems/{id}    -> ShoppingItem { name, isChecked, recipeTitle, id }
+//   users/{uid}/mealPlan/{yyyy-MM-dd} -> { breakfast?, lunch?, dinner? } each a Recipe map
+//   users/{uid}/dietChips/{id}        -> DietChip { label, style: "PREFERENCE"|"AVOID"|"CUISINE" }
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---- users/{uid} and everything nested under it ----
+    // Only the signed-in owner of a uid may read or write their own data -
+    // one user can never see or touch another user's recipes, list, plan or profile.
+    match /users/{uid} {
+      allow read, update, delete: if isOwner(uid);
+      allow create: if isOwner(uid) && isValidUserProfile();
+
+      match /savedRecipes/{recipeId} {
+        allow read, write: if isOwner(uid);
+      }
+
+      match /shoppingItems/{itemId} {
+        allow read, write: if isOwner(uid);
+      }
+
+      match /mealPlan/{dateKey} {
+        allow read, write: if isOwner(uid);
+      }
+
+      match /dietChips/{chipId} {
+        allow read, write: if isOwner(uid) && isValidDietChip();
+      }
+    }
+
+    // ---- usernames/{username} ----
+    // Lets Login resolve "username" -> email before the user is signed in
+    // (Firebase Auth itself only understands email/password), so the lookup
+    // read has to be allowed while signed out.
+    //
+    // NOTE: this intentionally trades a little privacy (anyone who knows or
+    // guesses a username can read the email tied to it) for not needing a
+    // backend. For a production launch, move this lookup into a Cloud
+    // Function (e.g. callable "emailForUsername") and lock this collection
+    // down to `allow read: if false;` instead.
+    match /usernames/{username} {
+      allow read: if true;
+      allow create: if request.auth != null
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.email is string;
+      allow update, delete: if request.auth != null
+                             && resource.data.uid == request.auth.uid;
+    }
+
+    // Everything else is closed by default.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+
+  function isOwner(uid) {
+    return request.auth != null && request.auth.uid == uid;
+  }
+
+  function isValidUserProfile() {
+    let data = request.resource.data;
+    return data.fullName is string
+      && data.username is string
+      && data.email is string;
+  }
+
+  function isValidDietChip() {
+    let data = request.resource.data;
+    return data.label is string
+      && data.style in ['PREFERENCE', 'AVOID', 'CUISINE'];
+  }
+}

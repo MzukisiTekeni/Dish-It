@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One ingredient row, INSIDE a recipe group card (item_shopping_group.xml) -
+     no card of its own here, since a card nested inside another card looks
+     heavy. Built programmatically into items_container by ShoppingGroupAdapter. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="9dp"
+    android:paddingBottom="9dp">
+
+    <CheckBox
+        android:id="@+id/checkbox_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/maroon_primary" />
+
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        android:text="Eggs"
+        android:textColor="@color/text_dark"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/btn_edit_item"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:contentDescription="Edit item"
+        android:focusable="true"
+        android:src="@drawable/ic_edit"
+        app:tint="@color/text_gray" />
+</LinearLayout>

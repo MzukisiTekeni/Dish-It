@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
+    <color name="maroon_primary">#550000</color>
+    <color name="maroon_dark">#CC550000</color>
+    <color name="background_pink">#EAD8D8</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="text_dark">#3A2020</color>
+    <color name="text_gray">#9C8A87</color>
+    <color name="star_yellow">#F5A623</color>
+    <color name="badge_red">#D32F2F</color>
+    <color name="divider_light">#EEDEDC</color>
+
+    <!-- Segmented tabs (Day/Week/Month, To buy/Bought, category filters) -->
+    <color name="tab_selected_bg">#D9AFAE</color>
+
+    <!-- Recipe category tags (Recipe Book rows, Meal Planner cards) -->
+    <color name="tag_breakfast_bg">#DDF3D9</color>
+    <color name="tag_breakfast_text">#3E8E4F</color>
+    <color name="tag_lunch_bg">#DCEBFB</color>
+    <color name="tag_lunch_text">#2E6DA4</color>
+    <color name="tag_dinner_bg">#FBF0D0</color>
+    <color name="tag_dinner_text">#9C7A1F</color>
+    <color name="tag_dessert_bg">#FCE0EC</color>
+    <color name="tag_dessert_text">#B0356B</color>
+
+    <!-- Dietary chips on My Profile -->
+    <color name="chip_green_bg">#DDF3D9</color>
+    <color name="chip_green_text">#3E8E4F</color>
+    <color name="chip_red_bg">#FBDCDC</color>
+    <color name="chip_red_text">#B0352F</color>
+
+    <!-- Health Score bar/labels -->
+    <color name="health_high">#3E8E4F</color>
+    <color name="health_medium">#C97A1F</color>
+    <color name="health_low">#B0352F</color>
+=======
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+>>>>>>> main
 </resources>

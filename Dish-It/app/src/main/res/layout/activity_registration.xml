@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_pink"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Registration"
+            android:textColor="@color/maroon_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Dish-It logo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dish_it_logo" />
+
+        <!-- Full name -->
+        <LinearLayout style="@style/AuthField">
+            <ImageView style="@style/AuthFieldIcon" android:src="@drawable/ic_person" />
+            <EditText
+                android:id="@+id/et_full_name"
+                style="@style/AuthFieldInput"
+                android:hint="Full name..."
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <!-- Username -->
+        <LinearLayout style="@style/AuthField">
+            <ImageView style="@style/AuthFieldIcon" android:src="@drawable/ic_person" />
+            <EditText
+                android:id="@+id/et_username"
+                style="@style/AuthFieldInput"
+                android:hint="Username..."
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout style="@style/AuthField">
+            <ImageView style="@style/AuthFieldIcon" android:src="@drawable/ic_email" />
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/AuthFieldInput"
+                android:hint="Email..."
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- Password -->
+        <LinearLayout style="@style/AuthField">
+            <ImageView style="@style/AuthFieldIcon" android:src="@drawable/ic_person_lock" />
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/AuthFieldInput"
+                android:hint="Password..."
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <!-- Confirm password -->
+        <LinearLayout style="@style/AuthField">
+            <ImageView style="@style/AuthFieldIcon" android:src="@drawable/ic_person_lock" />
+            <EditText
+                android:id="@+id/et_confirm_password"
+                style="@style/AuthFieldInput"
+                android:hint="Confirm Password..."
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <!-- Register button -->
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button_filled"
+            android:text="Register"
+            app:backgroundTint="@color/maroon_primary"
+            android:textAllCaps="false"
+            android:textColor="@color/card_white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Already have an account?"
+            android:textColor="@color/maroon_primary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:gravity="center"
+            android:text="OR"
+            android:textColor="@color/maroon_primary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_button_outline"
+            android:text="Login"
+            app:backgroundTint="@color/card_white"
+            android:textAllCaps="false"
+            android:textColor="@color/maroon_primary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "246957211623",
+    "firebase_url": "https://dish-it-5ce66-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dish-it-5ce66",
+    "storage_bucket": "dish-it-5ce66.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246957211623:android:83a82f0014028cbd9b0742",
+        "android_client_info": {
+          "package_name": "com.dish_it.dish_it"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8r29djIG2DvjEBo_AnAvR9o8ZZjKcuZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
