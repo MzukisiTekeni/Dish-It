@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="maroon_primary">#550000</color>
     <color name="maroon_dark">#CC550000</color>
     <color name="background_pink">#EAD8D8</color>
@@ -33,4 +34,8 @@
     <color name="health_high">#3E8E4F</color>
     <color name="health_medium">#C97A1F</color>
     <color name="health_low">#B0352F</color>
+=======
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+>>>>>>> main
 </resources>

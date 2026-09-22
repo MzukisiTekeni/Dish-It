@@ -4,6 +4,7 @@
     <shared>
       <config />
     </shared>
+<<<<<<< HEAD
     <layouts>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_auth_field.xml">
         <config>
@@ -176,12 +177,15 @@
         </config>
       </layout>
     </layouts>
+=======
+>>>>>>> main
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28f8ffd3-38d2-4d30-93c7-7aa9a8e13a9e" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.artifacts/2c0d9bff-4803-4571-ac68-0f39dcbb7a5d/implementation_plan.artifact.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/firebase.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/firestore.indexes.json" afterDir="false" />
@@ -321,6 +325,12 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/9.5.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.5.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,29 +340,37 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=C:\Users\Mzukisi\.android\avd\Medium_Phone_2.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+=======
+>>>>>>> main
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
         <projects_view>
           <tree_state>
+<<<<<<< HEAD
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Dish-It" type="f1a62948:ProjectNode" />
               </path>
             </expand>
+=======
+            <expand />
+>>>>>>> main
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -373,20 +391,29 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+>>>>>>> main
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2,
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3IpfZ58hIDdCSwcC0F3jGmJHpf5" />
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+>>>>>>> main
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "Android App.app.executor": "Run",
     "ApkExportedModule": "Dish-It.app",
     "ExportApk.ApkPathForDish-It.app": "C:\\Users\\Mzukisi\\Documents\\GitHub\\Dish-It\\Dish-It\\app",
@@ -502,6 +529,21 @@
       </set>
     </attachedChunks>
   </component>
+=======
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Mzukisi/Documents/GitHub/Dish-It/OPSC6312-POE-Part-2"
+  }
+}]]></component>
+>>>>>>> main
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="28f8ffd3-38d2-4d30-93c7-7aa9a8e13a9e" name="Changes" comment="" />
@@ -509,6 +551,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1788466483541</updated>
+<<<<<<< HEAD
       <workItem from="1790070472710" duration="1208000" />
     </task>
     <servers />
@@ -529,4 +572,9 @@
       </map>
     </option>
   </component>
+=======
+    </task>
+    <servers />
+  </component>
+>>>>>>> main
 </project>
