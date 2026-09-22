@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_month_day_number"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:text="24"
+        android:textColor="@color/text_dark"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/dots_row"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/card_white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_week_day_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Monday, 24 August"
+                android:textColor="@color/maroon_primary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_today_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_pill_solid"
+                android:backgroundTint="@color/maroon_primary"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="Today"
+                android:textColor="@color/card_white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/WeekMealRow">
+            <ImageView android:id="@+id/img_week_breakfast" style="@style/WeekMealIcon" />
+            <TextView android:id="@+id/tv_week_breakfast" style="@style/WeekMealLabel" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/WeekMealRow">
+            <ImageView android:id="@+id/img_week_lunch" style="@style/WeekMealIcon" />
+            <TextView android:id="@+id/tv_week_lunch" style="@style/WeekMealLabel" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/WeekMealRow">
+            <ImageView android:id="@+id/img_week_dinner" style="@style/WeekMealIcon" />
+            <TextView android:id="@+id/tv_week_dinner" style="@style/WeekMealLabel" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
